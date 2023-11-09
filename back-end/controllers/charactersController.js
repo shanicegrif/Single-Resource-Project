@@ -6,6 +6,7 @@ const {
   deleteCharacter,
   updateCharacter,
 } = require("../queries/characters.js");
+const {checkBoolean, checkName, checkBounty} = require("../validations/checkCharacters.js")
 const characters = express.Router();
 
 characters.get("/", async (req, res) => {
@@ -27,7 +28,7 @@ characters.get("/:id", async (req, res) =>{
     }
 })
 
-characters.post("/", async (req, res) => {
+characters.post("/", checkName, checkBoolean, checkBounty, async (req, res) => {
     try {
         const createdCharacter = await createCharacter(req.body);
         res.status(201).json(createdCharacter);
