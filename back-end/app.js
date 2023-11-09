@@ -1,9 +1,10 @@
 const express = require("express");
 const cors = require("cors");
 const app = express();
-
+const charactersController = require("./controllers/charactersController.js");
 app.use(cors());
 app.use(express.json());
+app.use("/characters", charactersController);
 
 
 

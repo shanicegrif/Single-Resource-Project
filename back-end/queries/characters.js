@@ -1,6 +1,6 @@
 const db = require("../db/dbConfig.js");
 
-const getAllCharaters = async () => {
+const getAllCharacters = async () => {
   try {
     const allCharaters = await db.any("SELECT * FROM characters");
     return allCharaters;
@@ -9,7 +9,7 @@ const getAllCharaters = async () => {
   }
 };
 
-const getOneCharater = async (id) => {
+const getOneCharacter = async (id) => {
   try {
     const oneCharacter = await db.one(
       "SELECT * FROM characters WHERE id=$1",
@@ -21,7 +21,7 @@ const getOneCharater = async (id) => {
   }
 };
 
-const createCharater = async (character) => {
+const createCharacter = async (character) => {
   try {
     const { name, bounty, crew, posterImage, hasPower } = character;
     const createdCharacter = await db.one(
@@ -34,7 +34,7 @@ const createCharater = async (character) => {
   }
 };
 
-const deleteCharater = async (id) => {
+const deleteCharacter = async (id) => {
   try {
     const deletedCharacter = await db.one(
       "DELETE from characters WHEREid =$1 RETURNING *",
@@ -46,7 +46,7 @@ const deleteCharater = async (id) => {
   }
 };
 
-const updateCharater = async (id, character) => {
+const updateCharacter = async (id, character) => {
   try {
     const { name, bounty, crew, posterImage, hasPower } = character;
     const updatedCharacter = await db.one(
@@ -60,9 +60,9 @@ const updateCharater = async (id, character) => {
 };
 
 module.exports = {
-  getAllCharaters,
-  getOneCharater,
-  createCharater,
-  deleteCharater,
-  updateCharater,
+  getAllCharacters,
+  getOneCharacter,
+  createCharacter,
+  deleteCharacter,
+  updateCharacter,
 };
