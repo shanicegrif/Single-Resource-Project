@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.get("/", (req, res) => {
-  res.send("Welcome to Tuner");
+  res.send("Welcome to One Piece Character Server!");
 });
 
 app.get("*", (req, res) => {
