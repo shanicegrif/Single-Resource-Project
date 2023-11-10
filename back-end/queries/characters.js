@@ -23,10 +23,10 @@ const getOneCharacter = async (id) => {
 
 const createCharacter = async (character) => {
   try {
-    const { name, bounty, crew, posterImage, hasPower } = character;
+    const { name, bounty, crew, poster_image, has_power } = character;
     const createdCharacter = await db.one(
-      "INSERT INTO characters (name, bounty, crew, posterImage, hasPower) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-      [name, bounty, crew, posterImage, hasPower]
+      "INSERT INTO characters (name, bounty, crew, poster_image, has_power) VALUES ($1, $2, $3, $4, $5) RETURNING *",
+      [name, bounty, crew, poster_image, has_power]
     );
     return createdCharacter;
   } catch (error) {
@@ -37,7 +37,7 @@ const createCharacter = async (character) => {
 const deleteCharacter = async (id) => {
   try {
     const deletedCharacter = await db.one(
-      "DELETE from characters WHEREid =$1 RETURNING *",
+      "DELETE FROM characters WHERE id=$1 RETURNING *",
       id
     );
     return deletedCharacter;
@@ -48,10 +48,10 @@ const deleteCharacter = async (id) => {
 
 const updateCharacter = async (id, character) => {
   try {
-    const { name, bounty, crew, posterImage, hasPower } = character;
+    const { name, bounty, crew, poster_image, has_power } = character;
     const updatedCharacter = await db.one(
-      "UPDATE character SET name=$1, bounty=$2, crew=$3, posterImage=$4, hasPower=$5 WHERE id=$6 RETURNING *",
-      [name, bounty, crew, posterImage, hasPower, id]
+      "UPDATE characters SET name=$1, bounty=$2, crew=$3, poster_image=$4, has_power=$5 WHERE id=$6 RETURNING *",
+      [name, bounty, crew, poster_image, has_power, id]
     );
     return updatedCharacter;
   } catch (error) {
