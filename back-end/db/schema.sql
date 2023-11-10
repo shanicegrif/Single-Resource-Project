@@ -7,8 +7,8 @@ CREATE DATABASE characters_dev;
 CREATE TABLE characters (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
-    bounty INT NOT NULL,
+    bounty BIGINT NOT NULL,
     crew TEXT,
-    posterImage TEXT,
-    hasPower BOOLEAN
+    poster_image TEXT,
+    has_power BOOLEAN
 );

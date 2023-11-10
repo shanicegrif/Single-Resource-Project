@@ -1,6 +1,6 @@
 \c characters_dev;
 
-INSERT INTO characters (name, bounty, crew, posterImage, hasPower)
+INSERT INTO characters (name, bounty, crew, poster_image, has_power)
 VALUES
 ('Monkey D. Luffy', 3000000000, 'Straw Hats', '<URL>', true),
 ('Roronoa Zoro', 1111000000, 'Straw Hats', '<URL>', false),
