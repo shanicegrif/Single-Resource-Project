@@ -9,6 +9,5 @@ CREATE TABLE characters (
     name TEXT NOT NULL,
     bounty BIGINT NOT NULL,
     crew TEXT,
-    poster_image TEXT,
     has_power BOOLEAN
 );

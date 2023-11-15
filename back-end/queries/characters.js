@@ -23,10 +23,10 @@ const getOneCharacter = async (id) => {
 
 const createCharacter = async (character) => {
   try {
-    const { name, bounty, crew, poster_image, has_power } = character;
+    const { name, bounty, crew, has_power } = character;
     const createdCharacter = await db.one(
-      "INSERT INTO characters (name, bounty, crew, poster_image, has_power) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-      [name, bounty, crew, poster_image, has_power]
+      "INSERT INTO characters (name, bounty, crew, has_power) VALUES ($1, $2, $3, $4) RETURNING *",
+      [name, bounty, crew, has_power]
     );
     return createdCharacter;
   } catch (error) {
@@ -50,8 +50,8 @@ const updateCharacter = async (id, character) => {
   try {
     const { name, bounty, crew, poster_image, has_power } = character;
     const updatedCharacter = await db.one(
-      "UPDATE characters SET name=$1, bounty=$2, crew=$3, poster_image=$4, has_power=$5 WHERE id=$6 RETURNING *",
-      [name, bounty, crew, poster_image, has_power, id]
+      "UPDATE characters SET name=$1, bounty=$2, crew=$3, has_power=$4 WHERE id=$5 RETURNING *",
+      [name, bounty, crew, has_power, id]
     );
     return updatedCharacter;
   } catch (error) {
