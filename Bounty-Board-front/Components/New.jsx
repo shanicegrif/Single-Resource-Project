@@ -71,15 +71,6 @@ const New = () => {
           placeholder="crew Name"
           onChange={handleTextChange}
         />
-        <label htmlFor="poster_image">Character Image URL:</label>
-        <input
-          id="poster_image"
-          type="text"
-          pattern="http[s]*://.+"
-          value={character.poster_image}
-          onChange={handleTextChange}
-          placeholder="http://"
-        />
         <label htmlFor="has_power">Devil Fruit Power:</label>
         <input
           id="has_power"
