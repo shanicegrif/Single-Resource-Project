@@ -48,7 +48,7 @@ const deleteCharacter = async (id) => {
 
 const updateCharacter = async (id, character) => {
   try {
-    const { name, bounty, crew, poster_image, has_power } = character;
+    const { name, bounty, crew, has_power } = character;
     const updatedCharacter = await db.one(
       "UPDATE characters SET name=$1, bounty=$2, crew=$3, has_power=$4 WHERE id=$5 RETURNING *",
       [name, bounty, crew, has_power, id]
