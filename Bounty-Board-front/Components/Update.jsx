@@ -73,13 +73,15 @@ const Update = () => {
           required
         />
         <label htmlFor="crew">Crew:</label>
-        <input
-          id="crew"
-          type="text"
-          value={character.crew}
-          placeholder="crew Name"
-          onChange={handleTextChange}
-        />
+        <select id="crew" value={character.crew} onChange={handleTextChange}>
+          <option value="">Select Crew</option>
+          <option value="Straw Hats">Straw Hats</option>
+          <option value="Blackbeard Pirates">Blackbeard Pirates</option>
+          <option value="Big Mom Pirates">Big Mom Pirates</option>
+          <option value="Beast Pirates">Beast Pirates</option>
+          <option value="Donquixote Pirates">Donquixote Pirates</option>
+        </select>
+        
         <label htmlFor="has_power">Devil Fruit Power:</label>
         <input
           id="has_power"
