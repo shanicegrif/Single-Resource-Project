@@ -9,7 +9,7 @@ import cracker from "../resources/Cracker.png";
 import daifuku from "../resources/Daifuku.png";
 import devon from "../resources/Devon.png";
 import diamante from "../resources/Diamante.png";
-import docQ from "../resources/DocQ.png";
+import doc from "../resources/DocQ.png";
 import doflamingo from "../resources/Doflamingo.png";
 import drake from "../resources/Drake.png";
 import franky from "../resources/Franky.png";
@@ -21,6 +21,7 @@ import king from "../resources/King.png";
 import laffitte from "../resources/Laffitte.png";
 import laoG from "../resources/LaoG.png";
 import linlin from "../resources/Linlin.png";
+import luffy from "../resources/luffy.png";
 import machvise from "../resources/Machvise.png";
 import nami from "../resources/Nami.png";
 import oven from "../resources/Oven.png";
@@ -35,7 +36,7 @@ import shiryu from "../resources/Shiryu.png";
 import smoothie from "../resources/Smoothie.png";
 import trebol from "../resources/Trebol.png";
 import usopp from "../resources/Usopp.png";
-import vanAugur from "../resources/VanAugur.png";
+import augur from "../resources/VanAugur.png";
 import zoro from "../resources/Zoro.png";
 
 const images = {
@@ -50,7 +51,7 @@ const images = {
     daifuku: daifuku,
     devon: devon,
     diamante: diamante,
-    docQ: docQ,
+    doc: doc,
     doflamingo: doflamingo,
     drake: drake,
     franky: franky,
@@ -62,6 +63,7 @@ const images = {
     laffitte: laffitte,
     laoG: laoG,
     linlin: linlin,
+    luffy: luffy,
     machvise: machvise,
     nami: nami,
     oven: oven,
@@ -76,7 +78,7 @@ const images = {
     smoothie: smoothie,
     trebol: trebol,
     usopp: usopp,
-    vanAugur: vanAugur,
+    augur: augur,
     zoro: zoro,
 };
 
