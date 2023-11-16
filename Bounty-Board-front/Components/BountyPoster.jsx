@@ -1,6 +1,6 @@
 import React from "react";
 import "./BountyPoster.css";
-import images from "../public/resources/images.js";
+import images from "../src/resources/images.js";
 import { Link } from "react-router-dom";
 //221 x 330 base
 //181 x 137 image size
