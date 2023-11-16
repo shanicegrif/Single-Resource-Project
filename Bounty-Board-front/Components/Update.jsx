@@ -10,7 +10,6 @@ const Update = () => {
     name: "",
     bounty: "",
     crew: "",
-    poster_image: "",
     has_power: false,
   });
 

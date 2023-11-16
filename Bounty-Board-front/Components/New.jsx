@@ -9,12 +9,15 @@ const New = () => {
     name: "",
     bounty: "",
     crew: "",
-    poster_image: "",
     has_power: false,
   });
 
   const handleTextChange = (event) => {
-    setCharacter({ ...character, [event.target.id]: event.target.value });
+    const { id, value } = event.target;
+
+  const numericValue = id === "bounty" ? Number(value) : value;
+
+  setCharacter({ ...character, [id]: numericValue });
   };
 
   const handleCheckboxChange = () => {
