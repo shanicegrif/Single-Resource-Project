@@ -4,7 +4,7 @@ const API = import.meta.env.VITE_BASE_URL;
 
 const Index = () => {
   const [allCharacters, setAllCharacters] = useState([]);
-  const [crew, setCrew] = useState([]);
+  const [crew, setCrew] = useState('Straw Hats');
   const [filteredCharacters, setFilteredCharacters] = useState([]);
 
   useEffect(() => {
@@ -38,7 +38,7 @@ const Index = () => {
       <div>
         <label>Select Crew: </label>
         <select value={crew} onChange={e => handleCrewChange(e.target.value)}>
-          <option selected value="Straw Hats">Straw Hats</option>
+          <option value="Straw Hats">Straw Hats</option>
           <option value="Blackbeard Pirates">Blackbeard Pirates</option>
           <option value="Big Mom Pirates">Big Mom Pirates</option>
           <option value="Beast Pirates">Beast Pirates</option>
