@@ -1,17 +1,25 @@
+.bounty-container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
 .bounty-poster {
-    position: relative;
-    width: 386px;
-    height: 557px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .info-on-image {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-align: center;
-    line-height: 0.3;
-  }
+  position: relative;
+  width: 386px;
+  height: 557px;
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.info-on-image {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  text-align: center;
+  line-height: 0.3;
+  font-family: "Century Old Style", serif;
+}

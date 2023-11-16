@@ -6,6 +6,7 @@ const NavBar = () => {
       <div style={titleContainerStyle}>
         <h1 style={titleStyle}>Bounty Board</h1>
       </div>
+      <img src = {('../resources/BountyBoard.png')}></img>
     </nav>
   );
 };
