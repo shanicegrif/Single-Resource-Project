@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import images from "../resources/images.js";
+import images from "../public/resources/images.js";
 const API = import.meta.env.VITE_BASE_URL;
 
 const Show = () => {
