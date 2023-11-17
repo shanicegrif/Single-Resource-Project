@@ -1,30 +1,19 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav style={navStyle}>
-      <div style={titleContainerStyle}>
-        <h1 style={titleStyle}>Bounty Board</h1>
-      </div>
-      <img src = {('../src/resources/BountyBoard.png')}></img>
+    <nav className="navbar fixed-top" style={navStyle}>
+      <Link to="/characters"> <img className="navLink" style={{paddingLeft:'10px'}} src={('../src/resources/BountyBoard.png')}></img> </Link>
+
+      <Link to="/characters/new" style={{color:"white", paddingRight:'10px'}}>
+      <button className="navLink">Add New Bounty</button>
+      </Link>
     </nav>
   );
 };
 
 const navStyle = {
-  backgroundColor: '#333',
-  padding: '10px',
-  textAlign: 'center',
-};
-
-const titleContainerStyle = {
-  maxWidth: '800px',
-  margin: '0 auto',
-};
-
-const titleStyle = {
-  color: 'white',
-  margin: '0',
+  backgroundColor: '#333'
 };
 
 export default NavBar;

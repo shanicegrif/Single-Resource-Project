@@ -33,9 +33,9 @@ const Index = () => {
   };
 
   return (
-    <div>
+    <div className='character-list'>
       <h1>Crew: {crew}</h1>
-      <div>
+      <div className='crewSelection'>
         <label>Select Crew: </label>
         <select value={crew} onChange={e => handleCrewChange(e.target.value)}>
           <option value="Straw Hats">Straw Hats</option>
