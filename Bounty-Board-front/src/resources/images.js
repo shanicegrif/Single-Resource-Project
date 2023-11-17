@@ -21,7 +21,7 @@ import king from "./King.png";
 import laffitte from "./Laffitte.png";
 import laoG from "./LaoG.png";
 import linlin from "./Linlin.png";
-import luffy from "./luffy.png";
+import luffy from "./Luffy.png"
 import machvise from "./Machvise.png";
 import nami from "./Nami.png";
 import oven from "./Oven.png";
