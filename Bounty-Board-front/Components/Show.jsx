@@ -46,14 +46,15 @@ const Show = () => {
   return (
     <div className="bounty-poster">
       <div className="head-image">
-        <img src={"../resources/wantedPoster.png"}></img>
+        <img src={"../src/resources/wantedPoster.png"}></img>
       </div>
       <div className="info-on-image">
         <img src={foundNameImage(name)} alt="Wanted Poster" />
-        <h2>{name}</h2>
-        <p>Reward: {bounty}</p>
-        <p>Part Of: {crew}</p>
-        <p>Has Devil Fruit Power: {has_power ? "Yes" : "No"}</p>
+        <div className="character-text">
+          <p>{name}</p>
+          <p>Reward: {bounty}</p>
+          <p>Has Devil Fruit Power: {has_power ? "Yes" : "No"}</p>
+        </div>
       </div>
       <div className="showCharacterNav">
         <div>

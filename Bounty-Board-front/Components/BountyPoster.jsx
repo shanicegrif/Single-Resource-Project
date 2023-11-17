@@ -2,8 +2,6 @@ import React from "react";
 import "./BountyPoster.css";
 import images from "../src/resources/images.js";
 import { Link } from "react-router-dom";
-//221 x 330 base
-//181 x 137 image size
 
 const BountyPoster = ({ character, id }) => {
   const { name, bounty, crew } = character;
@@ -25,12 +23,13 @@ const BountyPoster = ({ character, id }) => {
       </div>
       <div className="info-on-image">
         <img src={foundNameImage(name)} alt="Wanted Image" />
-        <h2>
-          {" "}
-          <Link to={`/characters/${id}`}>{name}</Link>
-        </h2>
-        <p>Reward: {bounty}</p>
-        <p>Part Of: {crew}</p>
+        <div className="showCharacterText">
+          <h5>
+            <Link to={`/characters/${id}`}>{name}</Link>
+          </h5>
+          <p>Reward: {bounty}</p>
+          <p>Part Of: {crew}</p>
+        </div>
       </div>
     </div>
   );
