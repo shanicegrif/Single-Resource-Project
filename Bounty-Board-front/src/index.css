@@ -43,6 +43,10 @@ h1 {
   }
 }
 
+.head-image img {
+  width: 225px;
+}
+
 .info-on-image {
   && .showCharacterText {
     padding-top: 27px;
