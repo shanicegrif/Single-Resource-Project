@@ -19,7 +19,7 @@ const BountyPoster = ({ character, id }) => {
   return (
     <div className="bounty-poster">
       <div className="head-image">
-        <img src={"/src/resources/wantedPoster.png"}></img>
+        <img src={"/src/resources/wantedPoster.png"}/>
       </div>
       <div className="info-on-image">
         <img src={foundNameImage(name)} alt="Wanted Image" />
