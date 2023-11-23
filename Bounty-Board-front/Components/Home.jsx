@@ -1,11 +1,12 @@
 import React from 'react';
+import images from "../src/resources/images.js";
 
 const Home = () => {
     return (
         <div style={styles.container}>
             <header style={styles.header}>
                 <img
-                    src="/src/resources/oneShip.jpeg"
+                    src={images['ship']}
                     alt="One Piece Logo"
                     style={styles.logo}
                 />
@@ -13,7 +14,7 @@ const Home = () => {
             </header>
             <section style={styles.mainContent}>
                 <img
-                    src="/src/resources/onePiece.jpg"
+                    src={images['piece']}
                     alt="One Piece Characters"
                     style={styles.mainImage}
                 />
