@@ -5,7 +5,7 @@ const Home = () => {
         <div style={styles.container}>
             <header style={styles.header}>
                 <img
-                    src="/src/assets/oneShip.jpeg"
+                    src="/src/resources/oneShip.jpeg"
                     alt="One Piece Logo"
                     style={styles.logo}
                 />
@@ -13,7 +13,7 @@ const Home = () => {
             </header>
             <section style={styles.mainContent}>
                 <img
-                    src="/src/assets/onePiece.jpg"
+                    src="/src/resources/onePiece.jpg"
                     alt="One Piece Characters"
                     style={styles.mainImage}
                 />
