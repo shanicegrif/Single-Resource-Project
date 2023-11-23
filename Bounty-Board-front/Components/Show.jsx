@@ -44,9 +44,9 @@ const Show = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className="bounty-poster">
+    <div className="bounty-poster" style={{marginTop: "50px"}}>
       <div className="head-image">
-        <img src={"/src/resources/oneWantedPoster.png"}></img>
+        <img src={images['poster']}/>
       </div>
       <div className="info-on-image">
         <img src={foundNameImage(name)} alt="Wanted Poster" />

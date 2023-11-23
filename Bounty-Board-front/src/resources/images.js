@@ -38,6 +38,10 @@ import trebol from "./Trebol.png";
 import usopp from "./Usopp.png";
 import augur from "./VanAugur.png";
 import zoro from "./Zoro.png";
+import ship from "./oneShip.jpeg";
+import piece from "./onePiece.jpg";
+import poster from "./oneWantedPoster.png";
+import board from "./BountyBoard.png";
 
 const images = {
     apoo: apoo,
@@ -80,6 +84,10 @@ const images = {
     usopp: usopp,
     augur: augur,
     zoro: zoro,
+    ship: ship,
+    poster: poster,
+    piece: piece,
+    board: board,
 };
 
 export default images;
