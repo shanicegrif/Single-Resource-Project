@@ -30,3 +30,7 @@ Bounty Board App is a web application for managing and displaying information ab
 - Navigation Links: Users can navigate between pages using navigation links (e.g., from the home page to a specific character's details page or the new character page).
 8. User Feedback
 - Alerts: Users receive alerts for successful actions (e.g., adding, updating, or deleting a character).
+
+## Links
+- [Deloyed Bounty Board App on netlify](https://main--splendid-tanuki-1fd96b.netlify.app/)
+- [Deployed Server on render](https://single-resource-project.onrender.com/)
