@@ -7,7 +7,7 @@ const Show = () => {
   const [character, setCharacter] = useState([]);
   const { id } = useParams();
   const navigate = useNavigate();
-  const { name, bounty, crew, has_power } = character;
+  const { name, bounty, has_power } = character;
 
   const foundNameImage = (name) => {
     if (name) {
